@@ -8,6 +8,21 @@ terraform {
   }
 }
 
+
+terraform {
+  required_version = "1.16.4"
+
+  cloud {
+    
+    organization = "terraformcloud26-org"
+
+    workspaces {
+      name = "projet-fils-rouge"
+    }
+  }
+}
+
+
 # terraform {
 #   required_version = "1.16.4"
 
