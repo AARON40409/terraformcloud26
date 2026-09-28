@@ -9,18 +9,18 @@ terraform {
 }
 
 
-terraform {
-  required_version = "1.16.4"
+# terraform {
+#   required_version = "1.16.4"
 
-  cloud {
+#   cloud {
     
-    organization = "terraformcloud26-org"
+#     organization = "terraformcloud26-org"
 
-    workspaces {
-      name = "projet-fils-rouge"
-    }
-  }
-}
+#     workspaces {
+#       name = "projet-fils-rouge"
+#     }
+#   }
+# }
 
 
 # terraform {
