@@ -23,18 +23,18 @@ terraform {
 # }
 
 
-# terraform {
-#   required_version = "1.16.4"
+terraform {
+  required_version = "1.16.4"
 
-#   cloud {
+  cloud {
     
-#     organization = "terraformcloud26-org"
+    organization = "terraformcloud26-org"
 
-#     workspaces {
-#       name = "terraformcloud26-workspace"
-#     }
-#   }
-# }
+    workspaces {
+      name = "terraformcloud26-workspace"
+    }
+  }
+}
 
 
 provider "aws" {
