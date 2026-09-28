@@ -27,10 +27,16 @@ provider "aws" {
 
 resource "aws_instance" "vm" {
   ami           = "ami-0c7217cdde317cfec" # Amazon Linux 2 AMI   
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
   key_name      = "terraformcloud" # Remplacez par le nom de votre paire de clés
 
   tags = {
     Name ="vm-lebon"
   }
+}
+
+variable "instance_type" {
+  description = "Type d'instance EC2 (valeur fournie par le workspace HCP Terraform)"
+  type        = string
+  default     = "t3.micro"
 }
